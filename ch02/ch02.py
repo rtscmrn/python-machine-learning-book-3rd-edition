@@ -207,6 +207,7 @@ df.tail()
 
 # select setosa and versicolor
 y = df.iloc[0:100, 4].values
+y2 = y
 y = np.where(y == 'Iris-setosa', -1, 1)
 
 # extract sepal length and petal length
@@ -223,6 +224,7 @@ plt.ylabel('petal length [cm]')
 plt.legend(loc='upper left')
 
 # plt.savefig('images/02_06.png', dpi=300)
+plt.savefig('images/mygraph.png', dpi=300)
 plt.show()
 
 
